@@ -1,0 +1,382 @@
+body{
+  background-color: @black;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+a{
+  color: inherit;
+  &:hover{
+    color: inherit;
+  }
+}
+.kkz-fixed-width{
+  width: @max-width;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 4290px;
+}
+.kkz-header{
+  width: 100%;
+  height: @menu-height;
+  background-color: @black;
+  text-align: center;
+  .logo{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 12px;
+    width: 400px;
+  }
+  .info{
+    float: right;
+    margin-right: 52px;
+    margin-top: 22px;
+  }
+  .phone{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .call{
+    color: @red;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.kkz-start-baner{
+  height: 674px;
+  position: relative;
+  background-image: url(../img/images/banner.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 152px;
+  z-index: 1000;
+  h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 54px;
+    color: @white;
+  }
+}
+.kkz-btn-call{
+  position: absolute;
+  right: 24px;
+  top: 180px;
+  cursor: pointer;
+}
+.kkz-howworks{
+  position: relative;
+  top: -125px;
+  height: 965px;
+  background-image: url(../img/images/gr-black.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 100px;
+  z-index: 999;
+  color: @beige;
+  h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 54px;
+    color: @white;
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+  &>p{
+    width: 470px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .box{
+    display: inline-block;
+    width: 338px;
+  }
+}
+.kkz-why{
+  position: relative;
+  top: -300px;
+  height: 873px;
+  background-image: url(../img/images/gr-black-both.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 180px;
+  z-index: 998;
+  color: @beige;
+  h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 54px;
+    color: @white;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .plus{
+    display: inline-block;
+    width: 170px;
+    &:nth-child(2){
+      position: relative;
+      top: 25px;
+    }
+  }
+  .pluses{
+    margin-bottom: 100px;
+  }
+}
+.kkz-offer{
+  position: relative;
+  top: -430px;
+  height: 1036px;
+  background-image: url(../img/images/gr-stripes.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 100px;
+  z-index: 997;
+  color: white;
+  h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 54px;
+    color: @white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-top: -40px;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+  .price{
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .box{
+    display: inline-block;
+    width: 336px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .kkz-btn{
+    margin-top: 80px;
+  }
+}
+.kkz-contact{
+  position: relative;
+  top: -520px;
+  height: 997px;
+  background-image: url(../img/images/gr-black-white.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 180px;
+  z-index: 997;
+  color: white;
+  p{
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 54px;
+    color: @white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-top: -40px;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+  .col{
+    width: 500px;
+    display: inline-block;
+  }
+  .phone{
+    font-size: 32px;
+    font-weight: 700;
+    color: @red;
+    margin-bottom: 52px;
+  }
+  .call-us{
+    margin-bottom: 16px;
+  }
+  .order{
+    input{
+      margin-left: 93px;
+      margin-bottom: 18px;
+      &.time{
+        width: 44px;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        top: -10px;
+      }
+    }
+    label{
+      font-size: 18px;
+      font-weight: 700;
+      display: inline-block;
+      width: 209px;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 72px;
+    }
+    h2{
+      margin-bottom: 38px;
+    }
+  }
+  span{
+    position: relative;
+    top: -10px;
+  }
+  .question{
+    color: @dark;
+    h2{
+      color: @red;
+      margin-bottom: 62px;
+    }
+    input{
+      background-color: #e5e5e5;
+    }
+    textarea{
+      height: 183px;
+      background-color: #e5e5e5;
+      margin-bottom: 46px;
+    }
+  }
+}
+textarea.form-control, input.form-control{
+  border-radius: 0;
+  width: 315px;
+  height: 44px;
+  border: 0;
+  margin-left: 93px;
+  margin-bottom: 18px;
+  box-shadow: none;
+  font-size: 18px;
+  &:focus{
+    box-shadow: none;
+  }
+}
+.form-control::-webkit-input-placeholder{
+  color: @grey;
+  font-size: 18px;
+}
+.kkz-btn{
+  border-radius: 25px;
+  color: @white;
+  box-shadow: 4px 7px 10px 0px rgba(131, 23, 38, 0.11);
+  width: 315px;
+  height: 59px;
+  font-size: 24px;
+  font-weight: 700;
+  border: 0;
+  &:focus{
+    outline: none;
+  }
+}
+.kkz-btn--red{
+  background-color:  @red;
+}
+.kkz-btn--white{
+  color:  @red;
+  background-color: @white;
+}
+.kkz-button--black{
+  background-color: @dark;
+  color: white;
+}
+.kkz-footer{
+  position: relative;
+  top: -551px;
+  font-size: 16px;
+  height: @footer-height;
+  text-align: center;
+  .info{
+    text-align: left;
+    position: absolute;
+    left: 0;
+    width: 151px;
+    font-size: 16px;
+    margin-top: 102px;
+    margin-left: 116px;
+    p{
+      margin: 0;
+    }
+  }
+  .logocop{
+    position: absolute;
+    right: 0;
+    margin-right: 76px;
+    width: 180px;
+    margin-top: 64px;
+  }
+  .copyright a{
+    text-decoration: underline;
+  }
+}
+.kkz-pop-up{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1001;
+  padding-left: 300px;
+  .order{
+    margin-top: 100px;
+    width: 482px;
+    background-color: @black;
+    padding: 60px 0px 88px 83px;
+    input{
+      margin-left: 0px;
+      margin-bottom: 18px;
+      &.time{
+        width: 44px;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        top: -10px;
+      }
+    }
+    label{
+      font-size: 18px;
+      font-weight: 700;
+      display: inline-block;
+      width: 209px;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 72px;
+    }
+    h2{
+      margin-bottom: 38px;
+    }
+  }
+  span{
+    position: relative;
+    top: -10px;
+  }
+}
